@@ -44,6 +44,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1058#1088#1072#1085#1089#1087#1086#1085#1080#1088#1086#1074#1072#1090#1100
     TabOrder = 1
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 32
@@ -65,7 +66,7 @@ object Form1: TForm1
     Left = 232
     Top = 120
     Width = 201
-    Height = 81
+    Height = 105
     ColCount = 3
     FixedColor = clBlack
     FixedCols = 0
