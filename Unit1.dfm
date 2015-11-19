@@ -46,36 +46,29 @@ object Form1: TForm1
     TabOrder = 1
     OnClick = Button2Click
   end
-  object Button3: TButton
-    Left = 32
-    Top = 96
-    Width = 145
-    Height = 25
-    Caption = #1054#1087#1088#1077#1076#1077#1083#1080#1090#1100
-    TabOrder = 2
-  end
   object Button4: TButton
     Left = 32
-    Top = 128
-    Width = 145
+    Top = 96
+    Width = 97
     Height = 25
-    Caption = #1056#1072#1085#1075
-    TabOrder = 3
+    Caption = #1059#1084#1085#1086#1078#1080#1090#1100' '#1084'1 '#1085#1072
+    TabOrder = 2
+    OnClick = Button4Click
   end
   object StringGrid3: TStringGrid
     Left = 232
     Top = 120
     Width = 201
-    Height = 105
+    Height = 81
     ColCount = 3
     FixedColor = clBlack
     FixedCols = 0
-    RowCount = 4
+    RowCount = 3
     FixedRows = 0
     GridLineWidth = 2
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
     ScrollBars = ssNone
-    TabOrder = 4
+    TabOrder = 3
     Visible = False
   end
   object Edit1: TEdit
@@ -83,125 +76,150 @@ object Form1: TForm1
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 5
+    TabOrder = 4
   end
   object Edit2: TEdit
     Left = 248
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 6
+    TabOrder = 5
   end
   object Edit3: TEdit
     Left = 288
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 7
+    TabOrder = 6
   end
   object Edit4: TEdit
     Left = 208
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 8
+    TabOrder = 7
   end
   object Edit5: TEdit
     Left = 248
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 9
+    TabOrder = 8
   end
   object Edit6: TEdit
     Left = 288
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 10
+    TabOrder = 9
   end
   object Edit7: TEdit
     Left = 208
     Top = 80
     Width = 33
     Height = 21
-    TabOrder = 11
+    TabOrder = 10
   end
   object Edit8: TEdit
     Left = 248
     Top = 80
     Width = 33
     Height = 21
-    TabOrder = 12
+    TabOrder = 11
   end
   object Edit9: TEdit
     Left = 288
     Top = 80
     Width = 33
     Height = 21
-    TabOrder = 13
+    TabOrder = 12
   end
   object Edit10: TEdit
     Left = 352
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 14
+    TabOrder = 13
   end
   object Edit11: TEdit
     Left = 392
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 15
+    TabOrder = 14
   end
   object Edit12: TEdit
     Left = 432
     Top = 32
     Width = 33
     Height = 21
-    TabOrder = 16
+    TabOrder = 15
   end
   object Edit13: TEdit
     Left = 352
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 17
+    TabOrder = 16
   end
   object Edit14: TEdit
     Left = 392
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 18
+    TabOrder = 17
   end
   object Edit15: TEdit
     Left = 432
     Top = 56
     Width = 33
     Height = 21
-    TabOrder = 19
+    TabOrder = 18
   end
   object Edit16: TEdit
     Left = 352
     Top = 80
     Width = 33
     Height = 21
-    TabOrder = 20
+    TabOrder = 19
   end
   object Edit17: TEdit
     Left = 392
     Top = 80
     Width = 33
     Height = 21
-    TabOrder = 21
+    TabOrder = 20
   end
   object Edit18: TEdit
     Left = 432
     Top = 80
     Width = 33
     Height = 21
+    TabOrder = 21
+  end
+  object Edit19: TEdit
+    Left = 136
+    Top = 96
+    Width = 41
+    Height = 25
     TabOrder = 22
+    Text = '1'
+  end
+  object Button3: TButton
+    Left = 32
+    Top = 128
+    Width = 97
+    Height = 25
+    Caption = #1059#1084#1085#1086#1078#1080#1090#1100' '#1084'2 '#1085#1072
+    TabOrder = 23
+    OnClick = Button3Click
+  end
+  object Edit20: TEdit
+    Left = 136
+    Top = 128
+    Width = 41
+    Height = 25
+    TabOrder = 24
+    Text = '1'
   end
 end
