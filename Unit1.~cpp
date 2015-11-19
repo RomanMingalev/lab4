@@ -20,27 +20,56 @@ int b[2][2];
 int n=3;
 int m=3;
 int product[2][2];
-void transporate(){
-Form1->Edit1->Text=a[0][0];
-Form1->Edit2->Text=a[1][0];
-Form1->Edit3->Text=a[2][0];
-Form1->Edit4->Text=a[0][1];
-Form1->Edit5->Text=a[1][1];
-Form1->Edit6->Text=a[2][1];
-Form1->Edit7->Text=a[0][2];
-Form1->Edit8->Text=a[1][2];
-Form1->Edit9->Text=a[2][2];
-Form1->Edit10->Text=b[0][0];
-Form1->Edit11->Text=b[1][0];
-Form1->Edit12->Text=b[2][0];
-Form1->Edit13->Text=b[0][1];
-Form1->Edit14->Text=b[1][1];
-Form1->Edit15->Text=b[2][1];
-Form1->Edit16->Text=b[0][2];
-Form1->Edit17->Text=b[1][2];
-Form1->Edit18->Text=b[2][2];
+
+void Umnog1(int i){
+Form1->Edit1->Text=String(atoi(Form1->Edit1->Text.c_str())*i);
+Form1->Edit2->Text=String(atoi(Form1->Edit2->Text.c_str())*i);
+Form1->Edit3->Text=String(atoi(Form1->Edit3->Text.c_str())*i);
+Form1->Edit4->Text=String(atoi(Form1->Edit4->Text.c_str())*i);
+Form1->Edit5->Text=String(atoi(Form1->Edit5->Text.c_str())*i);
+Form1->Edit6->Text=String(atoi(Form1->Edit6->Text.c_str())*i);
+Form1->Edit7->Text=String(atoi(Form1->Edit7->Text.c_str())*i);
+Form1->Edit8->Text=String(atoi(Form1->Edit8->Text.c_str())*i);
+Form1->Edit9->Text=String(atoi(Form1->Edit9->Text.c_str())*i);
 }
-;
+void Umnog2(int i){
+Form1->Edit10->Text=String(atoi(Form1->Edit10->Text.c_str())*i);
+Form1->Edit11->Text=String(atoi(Form1->Edit11->Text.c_str())*i);
+Form1->Edit12->Text=String(atoi(Form1->Edit12->Text.c_str())*i);
+Form1->Edit13->Text=String(atoi(Form1->Edit13->Text.c_str())*i);
+Form1->Edit14->Text=String(atoi(Form1->Edit14->Text.c_str())*i);
+Form1->Edit15->Text=String(atoi(Form1->Edit15->Text.c_str())*i);
+Form1->Edit16->Text=String(atoi(Form1->Edit16->Text.c_str())*i);
+Form1->Edit17->Text=String(atoi(Form1->Edit17->Text.c_str())*i);
+Form1->Edit18->Text=String(atoi(Form1->Edit18->Text.c_str())*i);
+}
+
+void transporate(){
+AnsiString temp;
+temp=Form1->Edit2->Text;
+Form1->Edit2->Text=Form1->Edit4->Text;
+Form1->Edit4->Text=temp;
+
+temp=Form1->Edit6->Text;
+Form1->Edit6->Text=Form1->Edit8->Text;
+Form1->Edit8->Text=temp;
+
+temp=Form1->Edit3->Text;
+Form1->Edit3->Text=Form1->Edit7->Text;
+Form1->Edit7->Text=temp;
+
+temp=Form1->Edit11->Text;
+Form1->Edit11->Text=Form1->Edit13->Text;
+Form1->Edit13->Text=temp;
+
+temp=Form1->Edit15->Text;
+Form1->Edit15->Text=Form1->Edit17->Text;
+Form1->Edit17->Text=temp;
+
+temp=Form1->Edit12->Text;
+Form1->Edit12->Text=Form1->Edit16->Text;
+Form1->Edit16->Text=temp;
+}
 void init(){
 
 randomize();
@@ -121,8 +150,21 @@ init();
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
-
+Init1();
 transporate();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+Umnog1(atoi(Form1->Edit19->Text.c_str()));
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+Umnog2(atoi(Form1->Edit20->Text.c_str()));
 }
 //---------------------------------------------------------------------------
 
