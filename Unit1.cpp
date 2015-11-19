@@ -188,3 +188,15 @@ Form1->Edit21->Text=s;
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::Button6Click(TObject *Sender)
+{
+Init1();
+ Form1->StringGrid3->Visible=true ;
+
+for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+
+               Form1->StringGrid3->Cells[j][i]=a[i][j] + b[i][j];
+}
+//---------------------------------------------------------------------------
+
