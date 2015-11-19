@@ -92,12 +92,6 @@ Form1->Edit16->Text=String(rand()%10);
 Form1->Edit17->Text=String(rand()%10);
 Form1->Edit18->Text=String(rand()%10);
 }
-void sum(){
-Form1->StringGrid3->Visible=true ;
- for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
-                Form1->StringGrid3->Cells[j][i]= a[i][j] + b[i][j];
-}
 void matrix(){
 
 Form1->StringGrid3->Visible=true ;
@@ -191,13 +185,6 @@ float op2=atoi(Form1->Edit10->Text.c_str())*atoi(Form1->Edit14->Text.c_str())*at
 -atoi(Form1->Edit11->Text.c_str())*atoi(Form1->Edit13->Text.c_str())*atoi(Form1->Edit19->Text.c_str());
 AnsiString s="m1="+String(op1)+" m2="+String(op2);
 Form1->Edit21->Text=s;
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::Button6Click(TObject *Sender)
-{
-Init1();
-sum();
 }
 //---------------------------------------------------------------------------
 
