@@ -168,3 +168,23 @@ Umnog2(atoi(Form1->Edit20->Text.c_str()));
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::Button5Click(TObject *Sender)
+{
+float op1=atoi(Form1->Edit1->Text.c_str())*atoi(Form1->Edit5->Text.c_str())*atoi(Form1->Edit9->Text.c_str())
++atoi(Form1->Edit2->Text.c_str())*atoi(Form1->Edit6->Text.c_str())*atoi(Form1->Edit7->Text.c_str())
++atoi(Form1->Edit3->Text.c_str())*atoi(Form1->Edit4->Text.c_str())*atoi(Form1->Edit8->Text.c_str())
+-atoi(Form1->Edit3->Text.c_str())*atoi(Form1->Edit5->Text.c_str())*atoi(Form1->Edit7->Text.c_str())
+-atoi(Form1->Edit1->Text.c_str())*atoi(Form1->Edit6->Text.c_str())*atoi(Form1->Edit8->Text.c_str())
+-atoi(Form1->Edit2->Text.c_str())*atoi(Form1->Edit4->Text.c_str())*atoi(Form1->Edit9->Text.c_str());
+
+float op2=atoi(Form1->Edit10->Text.c_str())*atoi(Form1->Edit14->Text.c_str())*atoi(Form1->Edit18->Text.c_str())
++atoi(Form1->Edit11->Text.c_str())*atoi(Form1->Edit15->Text.c_str())*atoi(Form1->Edit19->Text.c_str())
++atoi(Form1->Edit12->Text.c_str())*atoi(Form1->Edit13->Text.c_str())*atoi(Form1->Edit18->Text.c_str())
+-atoi(Form1->Edit12->Text.c_str())*atoi(Form1->Edit14->Text.c_str())*atoi(Form1->Edit17->Text.c_str())
+-atoi(Form1->Edit10->Text.c_str())*atoi(Form1->Edit16->Text.c_str())*atoi(Form1->Edit18->Text.c_str())
+-atoi(Form1->Edit11->Text.c_str())*atoi(Form1->Edit13->Text.c_str())*atoi(Form1->Edit19->Text.c_str());
+AnsiString s="m1="+String(op1)+" m2="+String(op2);
+Form1->Edit21->Text=s;
+}
+//---------------------------------------------------------------------------
+

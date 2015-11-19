@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 278
-  Top = 170
+  Left = 552
+  Top = 190
   Width = 554
-  Height = 279
+  Height = 307
   Caption = 'Form1'
   Color = clBtnHighlight
   Font.Charset = DEFAULT_CHARSET
@@ -201,7 +201,7 @@ object Form1: TForm1
     Left = 136
     Top = 96
     Width = 41
-    Height = 25
+    Height = 21
     TabOrder = 22
     Text = '1'
   end
@@ -218,7 +218,7 @@ object Form1: TForm1
     Left = 136
     Top = 128
     Width = 41
-    Height = 25
+    Height = 21
     TabOrder = 24
     Text = '1'
   end
@@ -237,5 +237,14 @@ object Form1: TForm1
     Width = 137
     Height = 21
     TabOrder = 26
+  end
+  object Button6: TButton
+    Left = 32
+    Top = 216
+    Width = 153
+    Height = 25
+    Caption = #1057#1091#1084#1084#1072' '#1084#1072#1090#1088#1080#1094
+    TabOrder = 27
+    OnClick = Button6Click
   end
 end
